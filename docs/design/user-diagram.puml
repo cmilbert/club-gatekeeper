@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor Member as m
+actor Admin as a
+
+package Gatekeeper {
+  usecase "Check-in" as UC1
+  usecase "Get User Data" as UC2
+  usecase "Register Member" as UC3
+}
+m --> UC1
+m --> UC2
+a --> UC1
+a --> UC2
+a --> UC3
+@enduml
