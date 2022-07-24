@@ -10,8 +10,9 @@ sudo apt install -y python3 python3-pip python3-dev \
   espeak alsa-utils spidev
 
 # install python dependencies
-pip3 install pyttsx3
-pip3 install mfrc522
+pip3 install pipx
+pipx ensurepath
+pipx install poetry
 
 echo "Rebooting"
 sudo reboot 0
