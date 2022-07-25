@@ -6,9 +6,10 @@ from playsound import playsound
 reader = SimpleMFRC522()
 
 try:
-    id, text = reader.read()
-    print(id)
-    print(text)
-    playsound('../assets/audio/beep.wav')
+    while True:
+        id, text = reader.read()
+        print(id)
+        print(text)
+        playsound('../assets/audio/beep.wav')
 finally:
     GPIO.cleanup()
