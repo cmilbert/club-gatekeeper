@@ -1,0 +1,5 @@
+python == "^3.9"
+mfrc522 == "^0.0.7"
+pyttsx3 == "^2.90"
+spidev == "^3.5"
+simpleaudio == "^1.0.4"
