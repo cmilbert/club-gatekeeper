@@ -158,3 +158,5 @@ cython_debug/
 .vscode
 
 poetry.lock
+
+members.db
