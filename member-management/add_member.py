@@ -15,4 +15,4 @@ finally:
     GPIO.cleanup()
 con = sqlite3.connect(os.path.dirname(sys.argv[0]) + "/../members.db")
 cur = con.cursor()
-cur.execute(f"INSERT INTO members VALUES (?, ?)", (rfid, name))
+cur.execute(f"INSERT INTO members VALUES (?, ?);", (rfid, name))
