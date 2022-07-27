@@ -156,3 +156,7 @@ cython_debug/
 
 # Editor
 .vscode
+
+poetry.lock
+
+members.db
