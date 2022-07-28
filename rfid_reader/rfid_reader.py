@@ -12,7 +12,7 @@ import serial
  
 class read_rfid:
     def read_rfid (self):
-        ser = serial.Serial ("/dev/ttyS0")
+        ser = serial.Serial ("/dev/ttyAMA0")
         ser.baudrate = 9600
         data = ser.read(12)
         if(data != " "):

@@ -2,3 +2,5 @@ mfrc522 >= 0.0.7
 pyttsx3 >= 2.90
 spidev >= 3.5
 simpleaudio >= 1.0.4
+pillow >= 9.2.0
+pyserial >= 3.5
