@@ -40,6 +40,10 @@ tts_engine = pyttsx3.init()
 display = SSD1306()
 reader = read_rfid()
 
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(17,GPIO.OUT)
+
 if __name__ == "__main__":
     try:
         while True:
